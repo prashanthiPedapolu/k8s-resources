@@ -2,11 +2,11 @@
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
-  name: roboshop-ng
+  name: roboshop-dev
   region: us-east-1
 
 managedNodeGroups:
-  - name: roboshop-ng
+  - name: roboshop-dev
     instanceTypes: ["m5.large"]   # start on on-demand; add Spot later
     desiredCapacity: 2
     minSize: 1
