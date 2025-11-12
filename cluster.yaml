@@ -6,7 +6,7 @@ metadata:
   region: us-east-1
 
 managedNodeGroups:
-  - name: roboshop-dev
+  - name: roboshop-dev-ng
     instanceTypes: ["t3.medium", "t3.large"]
     spot: false
        # start on on-demand; add Spot later
