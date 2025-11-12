@@ -8,7 +8,7 @@ metadata:
 managedNodeGroups:
   - name: roboshop-dev
     instanceTypes: ["t3.medium", "t3.large"]
-    on-demand: true
+    spot: false
        # start on on-demand; add Spot later
     desiredCapacity: 2
     minSize: 1
