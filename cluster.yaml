@@ -5,10 +5,6 @@ kind: ClusterConfig
 metadata:
   name: roboshop-dev
   region: us-east-1
-
-iam:
-  withOIDC: true    # <<< IMPORTANT — enables IAM OIDC provider
-
 managedNodeGroups:
   - name: roboshop-dev-ng
     instanceTypes: ["m5.large", "c3.large","c4.large","c5.large"]
