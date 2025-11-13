@@ -1,15 +1,18 @@
 # cluster.yaml
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
+
 metadata:
   name: roboshop-dev
   region: us-east-1
+
+iam:
+  withOIDC: true    # <<< IMPORTANT — enables IAM OIDC provider
 
 managedNodeGroups:
   - name: roboshop-dev-ng
     instanceTypes: ["t3.medium", "t3.large"]
     spot: false
-       # start on on-demand; add Spot later
     desiredCapacity: 2
     minSize: 1
     maxSize: 4
